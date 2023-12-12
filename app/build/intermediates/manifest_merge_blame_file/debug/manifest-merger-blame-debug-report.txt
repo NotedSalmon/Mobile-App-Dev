@@ -59,12 +59,12 @@
 36-->C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:21:27-74
 37            </intent-filter>
 38        </activity>
-39        <activity android:name="com.example.wagonersexperts.CustomerRegister" />
-39-->C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:24:9-54
-39-->C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:24:19-51
-40        <activity android:name="com.example.wagonersexperts.CustomerLogin" />
-40-->C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:9-51
-40-->C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:19-48
+39        <activity android:name="com.example.wagonersexperts.Customer.CustomerRegister" />
+39-->C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:24:9-63
+39-->C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:24:19-60
+40        <activity android:name="com.example.wagonersexperts.Customer.CustomerLogin" />
+40-->C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:9-60
+40-->C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:19-57
 41
 42        <meta-data
 42-->C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:26:9-28:57

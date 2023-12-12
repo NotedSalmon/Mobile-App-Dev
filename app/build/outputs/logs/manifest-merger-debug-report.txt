@@ -112,14 +112,14 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
 		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:21:27-74
-activity#com.example.wagonersexperts.CustomerRegister
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:24:9-54
+activity#com.example.wagonersexperts.Customer.CustomerRegister
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:24:9-63
 	android:name
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:24:19-51
-activity#com.example.wagonersexperts.CustomerLogin
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:9-51
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:24:19-60
+activity#com.example.wagonersexperts.Customer.CustomerLogin
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:9-60
 	android:name
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:19-48
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:19-57
 meta-data#preloaded_fonts
 ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:26:9-28:57
 	android:resource
