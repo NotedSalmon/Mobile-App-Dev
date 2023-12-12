@@ -36,8 +36,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.wagonersexperts.CustomerRegister" />
-        <activity android:name="com.example.wagonersexperts.CustomerLogin" />
+        <activity android:name="com.example.wagonersexperts.Customer.CustomerRegister" />
+        <activity android:name="com.example.wagonersexperts.Customer.CustomerLogin" />
 
         <meta-data
             android:name="preloaded_fonts"
