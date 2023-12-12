@@ -12,7 +12,7 @@ private val DataBaseName = "DB_Customer.db"
 private val ver : Int = 1
 
 
-class DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null, ver) {
+class  DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null, ver) {
 
     /*This is the values for the Customer Table */
         public val Table_Customer_Details = "TblCustomer_Details"
