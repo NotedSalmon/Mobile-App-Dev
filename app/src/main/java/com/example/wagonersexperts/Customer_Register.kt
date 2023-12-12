@@ -33,10 +33,11 @@ class CustomerRegister : AppCompatActivity() {
         val customer = CustomerData(0,customerName,customerEmail,customerPhone,customerUsername, customerPassword, customerIsActive)
 
         if(dbHelper.addCustomer(customer)){
-            Toast.makeText(this, "The customer is added successfully", Toast.LENGTH_SHORT).show()
-            findViewById<EditText>(R.id.txtFullName).text.clear()
+            Toast.makeText(this, "Account created successfully", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, CustomerLogin::class.java)
+            startActivity(intent)
         }
-        else Toast.makeText(this, "Error: Customer Not Added", Toast.LENGTH_SHORT).show()
+        else Toast.makeText(this, "Error: Account not created", Toast.LENGTH_SHORT).show()
 
     }
 }

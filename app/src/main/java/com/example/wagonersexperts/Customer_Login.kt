@@ -29,10 +29,10 @@ class CustomerLogin : AppCompatActivity(){
         if (dbHelper.ValidateUser(username,password)) {
             // Credentials are valid so should go to Menu Activity
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-            findViewById<EditText>(R.id.txtCustomer_Username).text.clear()
+
         } else {
             Toast.makeText(this, "Username or Password Incorrect", Toast.LENGTH_SHORT).show()
-            findViewById<EditText>(R.id.txtCustomer_Password).text.clear()
+
         }
 
     }

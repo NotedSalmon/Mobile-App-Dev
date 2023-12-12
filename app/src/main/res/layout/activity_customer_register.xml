@@ -62,7 +62,6 @@
         android:hint="Full Name"
         android:minHeight="48dp"
         android:textAlignment="center"
-        android:textColor="#C6FAFAFA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
