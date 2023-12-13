@@ -30,7 +30,7 @@ class  DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null
     override fun onCreate(db: SQLiteDatabase?) {
         val sqlCreateStatement: String = "CREATE TABLE " + Table_Customer_Details + " ( " + column_ID +
                 " INTEGER PRIMARY KEY AUTOINCREMENT, " + column_FullName + " TEXT, " + column_Email + " TEXT, " +
-                column_PhoneNumber + " TEXT, " + column_Username + " TEXT, " + column_Password + " TEXT, " + column_isActive + " BOOLEAN )"
+                column_PhoneNumber + " TEXT, " + column_Username + " TEXT, " + column_Password + " TEXT, " + column_isActive + " INTEGER DEFAULT 1 )"
         db?.execSQL(sqlCreateStatement)
     }
 

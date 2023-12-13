@@ -29,4 +29,21 @@ class Payment_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseNam
         TODO("Not yet implemented")
     }
 
+    fun addPayment(payment: PaymentData) : Boolean {
+
+        val db: SQLiteDatabase = this.writableDatabase
+        val cv: ContentValues = ContentValues()
+
+        cv.put(column_orderID, payment.orderID)
+        cv.put(column_paymentType, payment.paymentType)
+        cv.put(column_amount, payment.amount)
+        cv.put(column_paymentDate, payment.paymentDate)
+
+        val success = db.insert(Table_Payment, null, cv)
+        db.close()
+        return success != -1L
+    }
+
+
+
 }

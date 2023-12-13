@@ -1,6 +1,6 @@
 package com.example.wagonersexperts.Payment
 
-data class OrdersData(
+data class PaymentData(
     val paymentID: Int,
     var orderID: Int,
     var paymentType: String, //java.time.LocalDate
