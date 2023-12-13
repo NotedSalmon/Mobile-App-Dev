@@ -12,15 +12,3 @@ data class OrdersData(
         return "Order(customerID='$customerID', order date=$orderDate, order time=$orderTime, status=$orderStatus)"
     }
 }
-
-data class OrderDetails(
-    val orderDetailsID: Int,
-    val orderID: Int,
-    val productID: Int,
-) {
-
-    override fun toString(): String{
-        return "Order_Details(orderID ='$orderID', productID = '$productID')"
-    }
-
-}
