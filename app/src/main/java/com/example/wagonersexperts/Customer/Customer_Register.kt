@@ -7,7 +7,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.wagonersexperts.R
-
+import com.example.wagonersexperts.extra.SHAEncryption.shaEncrypt
 class CustomerRegister : AppCompatActivity() {
 
     val dbHelper: DBHelper = DBHelper(this)
@@ -24,12 +24,14 @@ class CustomerRegister : AppCompatActivity() {
     }
 
     fun btnRegisterCustomer(view: View) {
-        val customerName = findViewById<EditText>(R.id.txtFullName).text.toString()
-        val customerEmail = findViewById<EditText>(R.id.txtEmail).text.toString()
-        val customerPhone = findViewById<EditText>(R.id.txtPhoneNumber).text.toString()
-        val customerUsername = findViewById<EditText>(R.id.txtUsername).text.toString()
-        val customerPassword = findViewById<EditText>(R.id.txtPassword).text.toString()
+        val customerName = shaEncrypt(findViewById<EditText>(R.id.txtFullName).text.toString())
+        val customerEmail = shaEncrypt(findViewById<EditText>(R.id.txtEmail).text.toString())
+        val customerPhone = shaEncrypt(findViewById<EditText>(R.id.txtPhoneNumber).text.toString())
+        val customerUsername = shaEncrypt(findViewById<EditText>(R.id.txtUsername).text.toString())
+        val customerPassword = shaEncrypt(findViewById<EditText>(R.id.txtPassword).text.toString())
         val customerIsActive = true
+
+
 
         val customer = CustomerData(0,customerName,customerEmail,customerPhone,customerUsername, customerPassword, customerIsActive)
 

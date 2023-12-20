@@ -1,6 +1,6 @@
 package com.example.wagonersexperts.Admin.Admin_db
 
-data class Admin_DataFiles(
+data class AdminData(
     val AdminId: Int,
     val AdminFullName: String,
     val AdminEmail: String,
