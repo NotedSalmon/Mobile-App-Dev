@@ -111,7 +111,7 @@ class  DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null
                 val customer = CustomerData(id, FullName, Email, PhoneNumber, Username, Password, isActive)
                 customerList.add(customer)
             }while (cursor.moveToNext())
-            cursor.close()
+        cursor.close()
         db.close()
 
         return customerList
