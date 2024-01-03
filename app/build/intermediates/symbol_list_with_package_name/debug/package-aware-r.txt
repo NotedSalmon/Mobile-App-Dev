@@ -3155,6 +3155,8 @@ id btnBack
 id btnCustomer
 id btnCustomer_Login
 id btnCustomer_Register
+id btnLogin
+id btnProceedToPayment
 id btnRegister
 id buttonPanel
 id cache_measures
@@ -3171,6 +3173,8 @@ id chain2
 id chains
 id checkbox
 id checked
+id chkAdminActive
+id chkAdminPriveleges
 id chronometer
 id circle_center
 id clear_text
@@ -3229,6 +3233,8 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editPassword
+id editUsername
 id edit_query
 id elastic
 id embed
@@ -3283,6 +3289,7 @@ id indeterminate
 id info
 id invisible
 id inward
+id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -3407,6 +3414,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
@@ -3415,6 +3423,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerViewItemsOrdered
 id report_drawn
 id reverseSawtooth
 id right
@@ -3463,6 +3472,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerPaymentType
 id spline
 id split_action_bar
 id spread
@@ -3530,14 +3540,23 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtAdminEmail
+id txtAdminName
+id txtAdminPassword
+id txtAdminPhone
 id txtCustomer_Password
 id txtCustomer_Username
 id txtEmail
 id txtFullName
+id txtItemsOrdered
 id txtPassword
+id txtPaymentType
 id txtPhoneNumber
 id txtRole
 id txtTitle
+id txtTotalAmount
+id txtTotalAmountValue
+id txtUserName
 id txtUsername
 id unchecked
 id uniform
@@ -3676,9 +3695,12 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_admin_login
+layout activity_admin_register
 layout activity_customer_login
 layout activity_customer_register
 layout activity_main
+layout activity_payment
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
