@@ -1,6 +1,7 @@
 package com.example.wagonersexperts.Feedback
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RatingBar
@@ -26,9 +27,14 @@ class Feedback : AppCompatActivity() {
 
             Toast.makeText(
                 this,
-                "com.example.wagonersexperts.Feedback.Feedback submitted. Rating: $rating, Thank You",
+                "Feedback submitted. Thank You",
                 Toast.LENGTH_SHORT
             ).show()
+        }
+
+        fun btnSubmitFeedback(view: View)
+        {
+
         }
     }
 }
