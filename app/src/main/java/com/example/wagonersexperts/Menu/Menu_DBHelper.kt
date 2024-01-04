@@ -1,5 +1,6 @@
 package com.example.wagonersexperts.Menu
 
+import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
@@ -25,7 +26,7 @@ class Menu_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, 
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        TODO("Not yet implemented")
+        TODO("Not yet implemented)
     }
 
 
@@ -45,6 +46,21 @@ class Menu_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, 
             db.close()
             return Menu_DataFiles(0, "No Product", 0, "", 0)
         }
+    }
+
+    fun addMenuItem(menu: Menu_DataFiles): Boolean{
+        val db: SQLiteDatabase = this.writableDatabase
+        val cv: ContentValues = ContentValues();
+
+        cv.put(column_Name, menu.product_Name)
+        cv.put(column_Price, menu.product_Price)
+        cv.put(column_Image, menu.product_image)
+        cv.put(column_Type, menu.product_type)
+        cv.put(column_Available, menu.available)
+
+        val success = db.insert(Table_Menu, null, cv)
+        db.close()
+        return success != -1L
     }
 
 
