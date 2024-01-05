@@ -4,7 +4,7 @@ data class Menu_DataFiles(
     val product_ID: Int,
     val product_Name: String,
     val product_Price: Int,
-    val product_image: String,
+    val product_image: ByteArray?,
     val product_type: String,
     val available: Int
 ) {

@@ -21,32 +21,32 @@ class Menu_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, 
     override fun onCreate(db: SQLiteDatabase?) {
         val sqlCreateStatement: String = "CREATE TABLE " + Table_Menu + " ( " + column_ID +
                 " INTEGER PRIMARY KEY AUTOINCREMENT, " + column_Name + " TEXT, " +
-                column_Price + " INTEGER " + column_Image + " TEXT " + column_Type + " TEXT " + column_Available + " INTEGER )"
+                column_Price + " INTEGER " + column_Image + " BLOB " + column_Type + " TEXT " + column_Available + " INTEGER )"
         db?.execSQL(sqlCreateStatement)
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        TODO("Not yet implemented)
+        TODO("Not yet implemented")
     }
 
 
     /**
      * Something along these lines below to get menu items.
      */
-    fun getMenuItems(btnMenuOption: String) : Menu_DataFiles {
-        val db: SQLiteDatabase = this.writableDatabase
-        val sqlStatement = "SELECT * FROM $Table_Menu WHERE $column_Type = $btnMenuOption AND $column_Available = 1"
+  // fun getMenuItems(btnMenuOption: String) : Menu_DataFiles {
+  //     val db: SQLiteDatabase = this.writableDatabase
+  //     val sqlStatement = "SELECT * FROM $Table_Menu WHERE $column_Type = $btnMenuOption AND $column_Available = 1"
 
-        val cursor: Cursor = db.rawQuery(sqlStatement, null)
-        if(cursor.moveToFirst()){
-            db.close()
-            return Menu_DataFiles(cursor.getInt(0), cursor.getString(1), cursor.getInt(2), cursor.getString(3), cursor.getInt(4))
-        }
-        else {
-            db.close()
-            return Menu_DataFiles(0, "No Product", 0, "", 0)
-        }
-    }
+  //     val cursor: Cursor = db.rawQuery(sqlStatement, null)
+  //     if(cursor.moveToFirst()){
+  //         db.close()
+  //         return Menu_DataFiles(cursor.getInt(0), cursor.getString(1), cursor.getInt(2), cursor.getString(3), cursor.getInt(4))
+  //     }
+  //     else {
+  //         db.close()
+  //         return Menu_DataFiles(0, "No Product", 0, "", 0)
+  //     }
+  // }
 
     fun addMenuItem(menu: Menu_DataFiles): Boolean{
         val db: SQLiteDatabase = this.writableDatabase
