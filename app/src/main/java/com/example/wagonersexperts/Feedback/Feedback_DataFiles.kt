@@ -1,5 +1,6 @@
 package com.example.wagonersexperts.Feedback
 
+//Data class for Feedback table, includes the Username for identification of who sent the feedback.
 data class Feedback_DataFiles(
     val feedbackID: Int,
     val usernameFeedback: String,

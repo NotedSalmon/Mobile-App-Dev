@@ -53,6 +53,7 @@
         android:layout_below="@id/ratingBar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
+        android:onClick="btnSubmitFeedback"
         android:backgroundTint="#8F9779"
         android:fontFamily="@font/allerta_stencil"
         android:text="Submit Feedback"

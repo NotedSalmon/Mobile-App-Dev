@@ -12,7 +12,7 @@ private val DataBaseName = "Wagon_Experts.db"
 private val ver : Int = 1
 
 
-class  DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null, ver) {
+class  Customer_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null, ver) {
 
     /*This is the values for the Customer Table */
         public val Table_Customer_Details = "tblCustomer_Details"
@@ -25,8 +25,6 @@ class  DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null
         public val column_isActive = "CustomerIsActive"
 
     //This is called the first time a database is accessed
-    // Creates a new DB
-
     override fun onCreate(db: SQLiteDatabase?) {
         val sqlCreateStatement: String = "CREATE TABLE " + Table_Customer_Details + " ( " + column_ID +
                 " INTEGER PRIMARY KEY AUTOINCREMENT, " + column_FullName + " TEXT, " + column_Email + " TEXT, " +
@@ -39,6 +37,11 @@ class  DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null
         TODO("Not Yet implemented")
     }
 
+    /*
+    The function addCustomers uses a variable customer that correlates to the Data Class - CustomerData
+    This customer variable will be declared when creating a new customer. The variable will include all the
+    correct data and try to insert into the database
+     */
     fun addCustomer(customer: CustomerData) : Boolean {
         //WriteableDatabase for insert actions
         val db: SQLiteDatabase = this.writableDatabase
@@ -50,35 +53,45 @@ class  DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null
         cv.put(column_Username, customer.username)
         cv.put(column_Password, customer.password)
 
-        val success = db.insert(Table_Customer_Details, null, cv)
+        val success = db.insert(Table_Customer_Details, null, cv) //Creates a value to send back
         db.close()
         return success != -1L
     }
 
+    /*
+    This function deletes customers. This will be useful if a user or admin needs to delete an account.
+    Again it uses the customer variable which would contain the Customer Username and delete the whole row
+     */
     fun deleteCustomer(customer: CustomerData) : Boolean{
 
         val db: SQLiteDatabase = this.writableDatabase
-        val result = db.delete(Table_Customer_Details, "$column_ID = ${customer.id}", null) == 1
-
+        val result = db.delete(Table_Customer_Details, "$column_Username = ${customer.username}", null) == 1
         db.close()
         return result
     }
 
-    fun getCustomer(cUsername: String, cPassword: String) : CustomerData {
+    /*
+    This function gets a specific user that matches the inputted Username and Full Name, if there is no match
+    it return an error message.
+     */
+    fun getCustomer(cUsername: String, cFullName: String) : CustomerData {
         val db: SQLiteDatabase = this.writableDatabase
-        val sqlStatement = "SELECT * FROM $Table_Customer_Details WHERE $column_Username = $cUsername AND $column_Password = $cPassword"
+        val sqlStatement = "SELECT * FROM $Table_Customer_Details WHERE $column_FullName = $cFullName AND $column_Username = $cUsername"
 
         val cursor: Cursor = db.rawQuery(sqlStatement, null)
         if(cursor.moveToFirst()){
             db.close()
-            return CustomerData(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5), cursor.getInt(6) == 1)
+            return CustomerData(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5), cursor.getInt(6))
         }
         else {
             db.close()
-            return CustomerData(0, "Customer does not exist", "", "", "", "", false )
+            return CustomerData(0, "Customer does not exist", "", "", "", "", 0 )
         }
     }
 
+    /*
+    This function validates the user when they are trying to login. It makes sure the username and password are correct
+     */
     fun ValidateUser(username: String, password: String): Boolean {
         val db = this.readableDatabase
         val columns = arrayOf(column_Username, column_Password)
@@ -91,6 +104,10 @@ class  DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null
         return count > 0
     }
 
+
+    /*
+    This function returns a list of all the customers in the Database.
+     */
     fun getAllCustomer() : ArrayList<CustomerData> {
         val customerList = ArrayList<CustomerData>()
         val db: SQLiteDatabase = this.readableDatabase
@@ -106,7 +123,7 @@ class  DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null
                 val PhoneNumber: String = cursor.getString(3)
                 val Username: String = cursor.getString(4)
                 val Password: String = cursor.getString(5)
-                val isActive: Boolean = cursor.getInt(6) == 1
+                val isActive: Int = cursor.getInt(6)
 
                 val customer = CustomerData(id, FullName, Email, PhoneNumber, Username, Password, isActive)
                 customerList.add(customer)
