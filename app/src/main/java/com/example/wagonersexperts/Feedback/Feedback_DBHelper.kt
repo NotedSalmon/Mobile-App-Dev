@@ -5,21 +5,29 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import android.util.Log
 
+//Database Config
 private val DataBaseName = "Wagon_Experts.db"
 private val ver : Int = 1
 
 class Feedback_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, null, ver)
 {
+    //Initiate column names for the table
     public val Table_Feedback = "tblFeedback"
     public val column_ID = "feedbackID"
     public val column_User = "User"
     public val column_Feedback = "Feedback"
     public val column_Stars = "Stars"
+
+    /*
+    This function creates the tblFeedback using the columns defined above as an SQL statement.
+     */
     override fun onCreate(db: SQLiteDatabase?) {
-        val sqlCreateStatement: String = "CREATE Table " + Table_Feedback + " ( " + column_ID +
+        Log.d("DatabaseDebug", "onCreate method is called")
+        val sqlCreateStatement: String = "CREATE TABLE " + Table_Feedback + " ( " + column_ID +
                 " INTEGER PRIMARY KEY AUTOINCREMENT, " + column_User + " TEXT, " + column_Feedback +
-                " TEXT, " + column_Stars + " INTEGER)"
+                " TEXT, " + column_Stars + " INTEGER )"
         db?.execSQL(sqlCreateStatement)
     }
 
@@ -27,19 +35,30 @@ class Feedback_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseNa
         TODO("Not yet implemented")
     }
 
-    fun addFeedback(Feedback: Feedback_DataFiles) : Boolean {
+    /*
+    This function is used when adding feedback to the database, it uses the variable values from feedback
+    and uses them respectively depending on if is the username or the feedback.
+
+    This data is then inserted into the database giving a boolean value if it successed
+     */
+    fun addFeedback(feedback: Feedback_DataFiles) : Boolean {
         val db: SQLiteDatabase = this.writableDatabase
         val cv: ContentValues = ContentValues()
 
-        cv.put(column_User, Feedback.usernameFeedback)
-        cv.put(column_Feedback, Feedback.feedback)
-        cv.put(column_Stars, Feedback.stars)
+        cv.put(column_User, feedback.usernameFeedback)
+        cv.put(column_Feedback, feedback.feedback)
+        cv.put(column_Stars, feedback.stars)
 
         val success = db.insert(Table_Feedback, null, cv)
         db.close()
         return success != -1L
     }
 
+    /*
+    This will be useful for the Admin when wanting to see all the feedback they have received.
+
+    Returns a list of the feedback that is stored in the database
+     */
     fun getAllFeedback() : ArrayList<Feedback_DataFiles> {
         val feedbackList = ArrayList<Feedback_DataFiles>()
         val db: SQLiteDatabase = this.readableDatabase

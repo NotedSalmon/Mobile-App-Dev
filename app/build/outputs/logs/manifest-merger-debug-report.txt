@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:2:1-33:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\University\.gradle\caches\transforms-3\63382362199d553975ec785d0a1c3d4b\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\University\.gradle\caches\transforms-3\c8da0b00cb3dee3582f03f3d60b1ce57\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\University\.gradle\caches\transforms-3\de7d012e4e098b38a46ce826c7deed69\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -56,9 +56,13 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\University\.gradle\caches\tran
 		INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:5:22-74
 application
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:5:5-29:19
-INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:5:5-29:19
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:6:5-31:19
+INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:6:5-31:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\University\.gradle\caches\transforms-3\63382362199d553975ec785d0a1c3d4b\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\University\.gradle\caches\transforms-3\63382362199d553975ec785d0a1c3d4b\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\University\.gradle\caches\transforms-3\c8da0b00cb3dee3582f03f3d60b1ce57\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -80,53 +84,57 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\University\.gradle
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\University\.gradle\caches\transforms-3\43edc55df3b5c22b93aea8041b6b233a\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:11:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:9:9-54
 	android:roundIcon
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:12:9-54
 	tools:targetApi
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:15:9-29
 	android:icon
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:13:9-53
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:14:9-53
 	android:dataExtractionRules
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:8:9-65
 activity#com.example.wagonersexperts.MainActivity
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:15:9-23:20
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:16:9-24:20
 	android:exported
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:18:13-36
 	android:name
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:16:13-41
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:17:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:22:27-74
 activity#com.example.wagonersexperts.Customer.CustomerRegister
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:24:9-63
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:9-63
 	android:name
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:24:19-60
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:19-60
 activity#com.example.wagonersexperts.Customer.CustomerLogin
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:9-60
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:26:9-60
 	android:name
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:25:19-57
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:26:19-57
+activity#com.example.wagonersexperts.Feedback.Feedback
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:27:9-54
+	android:name
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:27:19-52
 meta-data#preloaded_fonts
-ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:26:9-28:57
+ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:28:9-30:57
 	android:resource
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:28:13-54
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:30:13-54
 	android:name
-		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:27:13-43
+		ADDED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml:29:13-43
 uses-sdk
 INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\University\OneDrive - De Montfort University\Mobile App Dev\Flavio\Ver 3\Mobile-App-Dev\app\src\main\AndroidManifest.xml
