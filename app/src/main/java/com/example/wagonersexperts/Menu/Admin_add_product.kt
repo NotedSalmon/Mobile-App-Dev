@@ -1,7 +1,4 @@
- : AppCompatActivity() {
-    private val imageRequest = 1
-    var imageToByte: ByteArray? = null
-    package com.example.wagonersexperts.Menu
+package com.example.wagonersexperts.Menu
 
     import android.app.Activity
     import android.content.Intent
@@ -17,8 +14,10 @@
     import com.example.wagonersexperts.R
     import kotlinx.coroutines.selects.select
 
-    class Admin_add_product
+class Admin_add_product: AppCompatActivity() {
     val dbHelper: Menu_DBHelper = Menu_DBHelper(this)
+    private val imageRequest = 1
+    var imageToByte: ByteArray? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
