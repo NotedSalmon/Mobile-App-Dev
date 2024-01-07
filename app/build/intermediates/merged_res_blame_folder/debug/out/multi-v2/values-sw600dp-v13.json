@@ -4,7 +4,7 @@
             "outputFile": "com.example.wagonersexperts.app-mergeDebugResources-30:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\P2597948\\.gradle\\caches\\transforms-3\\41b84c13023f948556277464a3fc4041\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\University\\.gradle\\caches\\transforms-3\\41b84c13023f948556277464a3fc4041\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\P2597948\\.gradle\\caches\\transforms-3\\d970c1782726513e2d73d4c9c72f72ce\\transformed\\material-1.10.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\University\\.gradle\\caches\\transforms-3\\d970c1782726513e2d73d4c9c72f72ce\\transformed\\material-1.10.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
