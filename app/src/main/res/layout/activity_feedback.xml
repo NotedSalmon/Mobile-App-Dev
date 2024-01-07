@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Feedback"
+        android:fontFamily="@font/allerta_stencil"
+        android:shadowColor="#808080"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:textColor="#3E2723"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/txtFeedback"
+        android:layout_width="395dp"
+        android:layout_height="195dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="55dp"
+        android:background="@android:color/white"
+        android:hint="Write your feedback here"
+        android:textAlignment="center"
+        android:inputType="textMultiLine"
+        android:padding="8dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFeedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#AA8157"
+        android:progressTint="#E4C80E"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/btnSubmitFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="btnSubmitFeedback"
+        android:backgroundTint="#8F9779"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Submit Feedback"
+        android:textColor="#3E2723"
+        android:textSize="20sp" />
+
+</RelativeLayout>
