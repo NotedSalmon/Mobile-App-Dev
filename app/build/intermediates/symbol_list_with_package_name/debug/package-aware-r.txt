@@ -3151,16 +3151,22 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnAdmin
+id btnAdmin_Login
 id btnBack
 id btnBasketPay
 id btnBasketRemoveItem
 id btnCustomer
 id btnCustomer_Login
 id btnCustomer_Register
-id btnLogin
 id btnMenu
+id btnMenuImage
+id btnMenuOverview
+id btnRe
+id btnReg
 id btnRegister
+id btnRegisterAdmin
 id btnSubmitFeedback
+id btnUpload
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3236,7 +3242,11 @@ id easeInOut
 id easeOut
 id east
 id edge
+id edit
 id editPassword
+id editPrice
+id editProductName
+id editType
 id editUsername
 id edit_query
 id elastic
@@ -3286,6 +3296,8 @@ id ignore
 id ignoreRequest
 id image
 id imgLogo
+id imgMenuImage
+id imgMenuPic
 id immediateStop
 id included
 id indeterminate
@@ -3307,6 +3319,7 @@ id line3
 id linear
 id listMode
 id list_item
+id lstMenuAdmin
 id m3_side_sheet
 id marquee
 id masked
@@ -3544,6 +3557,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txMenuName
 id txtAdminEmail
 id txtAdminName
 id txtAdminPassword
@@ -3554,6 +3568,7 @@ id txtCustomer_Username
 id txtEmail
 id txtFeedback
 id txtFullName
+id txtMenuPrice
 id txtPassword
 id txtPhoneNumber
 id txtRole
@@ -3697,7 +3712,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_admin_add_item
+layout activity_admin_home_page
 layout activity_admin_login
+layout activity_admin_menu
 layout activity_admin_register
 layout activity_basket
 layout activity_customer_login
@@ -3740,6 +3758,7 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout menu_list_item
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
