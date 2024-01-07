@@ -5,6 +5,7 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import java.sql.Blob
 
 private val DataBaseName = "Wagon_Experts.db"
 private val ver : Int = 1
@@ -33,20 +34,20 @@ class Menu_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, 
     /**
      * Something along these lines below to get menu items.
      */
-  // fun getMenuItems(btnMenuOption: String) : Menu_DataFiles {
-  //     val db: SQLiteDatabase = this.writableDatabase
-  //     val sqlStatement = "SELECT * FROM $Table_Menu WHERE $column_Type = $btnMenuOption AND $column_Available = 1"
+   fun getMenuItems(btnMenuOption: String) : Menu_DataFiles {
+       val db: SQLiteDatabase = this.writableDatabase
+       val sqlStatement = "SELECT * FROM $Table_Menu WHERE $column_Type = $btnMenuOption AND $column_Available = 1"
 
-  //     val cursor: Cursor = db.rawQuery(sqlStatement, null)
-  //     if(cursor.moveToFirst()){
-  //         db.close()
-  //         return Menu_DataFiles(cursor.getInt(0), cursor.getString(1), cursor.getInt(2), cursor.getString(3), cursor.getInt(4))
-  //     }
-  //     else {
-  //         db.close()
-  //         return Menu_DataFiles(0, "No Product", 0, "", 0)
-  //     }
-  // }
+       val cursor: Cursor = db.rawQuery(sqlStatement, null)
+       if(cursor.moveToFirst()){
+           db.close()
+           return Menu_DataFiles(cursor.getInt(0), cursor.getString(1), cursor.getInt(2), cursor.getBlob(3), cursor.getString(4), cursor.getInt(5))
+       }
+       else {
+           db.close()
+           return Menu_DataFiles(0, "No Product", 0, byteArrayOf(), "", 0)
+       }
+   }
 
     fun addMenuItem(menu: Menu_DataFiles): Boolean{
         val db: SQLiteDatabase = this.writableDatabase
@@ -63,6 +64,28 @@ class Menu_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, 
         return success != -1L
     }
 
+    fun getAllMenuItems(): List<Menu_DataFiles>{
+        val menuList = mutableListOf<Menu_DataFiles>()
+        val db: SQLiteDatabase = this.writableDatabase
+        val cursor: Cursor = db.rawQuery("SELECT * FROM $Table_Menu WHERE $column_Available = 1", null)
+
+        cursor.use{
+            while (it.moveToNext()){
+                val id: Int = cursor.getInt(0)
+                val itemName: String = cursor.getString(1)
+                val price: Int = cursor.getInt(2)
+                val itemImage: ByteArray? = cursor.getBlob(3)
+                val type: String = cursor.getString(4)
+
+                val menuItem = Menu_DataFiles(id, itemName, price, itemImage, type, 1)
+
+                menuList.add(menuItem)
+            }
+        }
+        cursor.close()
+
+        return menuList
+    }
 
 
 

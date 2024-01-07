@@ -1,4 +1,4 @@
-package com.example.wagonersexperts.Admin.Admin_db
+package com.example.wagonersexperts.admin.Admin_db
 
 data class AdminData(
     val AdminId: Int,

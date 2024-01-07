@@ -22,6 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".admin.AdminLogin" />
+        <activity android:name=".admin.AdminRegister"/>
         <activity android:name=".Customer.CustomerRegister" />
         <activity android:name=".Customer.CustomerLogin" />
         <activity android:name=".Feedback.Feedback"/>

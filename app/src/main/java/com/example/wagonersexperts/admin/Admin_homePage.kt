@@ -1,4 +1,4 @@
-package com.example.wagonersexperts.Admin
+package com.example.wagonersexperts.admin
 
 import android.content.Intent
 import android.os.Bundle
