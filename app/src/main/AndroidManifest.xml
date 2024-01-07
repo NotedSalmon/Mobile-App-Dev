@@ -27,6 +27,10 @@
         <activity android:name=".Customer.CustomerRegister" />
         <activity android:name=".Customer.CustomerLogin" />
         <activity android:name=".Feedback.Feedback"/>
+        <activity android:name=".Menu.CustomerTest"/>
+        <activity android:name=".Payment.Payment_Pay"/>
+        <activity android:name=".Orders.Basket"/>
+        <activity android:name=".Customer.Customer_Account_Settings"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

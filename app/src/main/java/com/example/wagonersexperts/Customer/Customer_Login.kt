@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.wagonersexperts.Feedback.Feedback
+import com.example.wagonersexperts.Menu.CustomerTest
 import com.example.wagonersexperts.R
 import com.example.wagonersexperts.extra.SHAEncryption.shaEncrypt
 
@@ -41,7 +42,7 @@ class CustomerLogin : AppCompatActivity(){
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
             globalCustomer = username //Sets the Global Customer as the Username
 
-            val intent = Intent(this@CustomerLogin, Feedback::class.java)
+            val intent = Intent(this@CustomerLogin, CustomerTest::class.java)
             intent.putExtra("customer", globalCustomer) //This extra is how the global customer will be sent between activities
             startActivity(intent)
         } else {

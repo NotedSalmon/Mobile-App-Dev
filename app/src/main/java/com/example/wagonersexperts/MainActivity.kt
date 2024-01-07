@@ -8,7 +8,7 @@ import android.os.Build
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.wagonersexperts.admin.AdminLogin
+import com.example.wagonersexperts.Admin.AdminLogin
 import com.example.wagonersexperts.Customer.CustomerLogin
 
 class MainActivity : AppCompatActivity() {

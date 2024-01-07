@@ -43,6 +43,10 @@
         <activity android:name="com.example.wagonersexperts.Customer.CustomerRegister" />
         <activity android:name="com.example.wagonersexperts.Customer.CustomerLogin" />
         <activity android:name="com.example.wagonersexperts.Feedback.Feedback" />
+        <activity android:name="com.example.wagonersexperts.Menu.CustomerTest" />
+        <activity android:name="com.example.wagonersexperts.Payment.Payment_Pay" />
+        <activity android:name="com.example.wagonersexperts.Orders.Basket" />
+        <activity android:name="com.example.wagonersexperts.Customer.Customer_Account_Settings" />
 
         <meta-data
             android:name="preloaded_fonts"
