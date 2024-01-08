@@ -50,7 +50,7 @@ class AdminAddProduct: AppCompatActivity() {
         val type = findViewById<EditText>(R.id.editType).text.toString()
         val menu = Menu_DataFiles(0, productName, price, imageToByte, type, 1)
 
-        if(dbHelper.addMenuItem(menu)){
+        if(dbHelper.addMenuItem(menu) == -1L){
             Toast.makeText(this, "menu added", Toast.LENGTH_SHORT).show()
         }
         else{

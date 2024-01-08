@@ -19,8 +19,21 @@ class AdminLogin : AppCompatActivity(){
     }
 
     fun btnAdminLogin(view: View){
+        //val username = findViewById<EditText>(R.id.editUsername).toString()
+        //val password = findViewById<EditText>(R.id.editPassword).toString()
+//
+        //if (dbHelper.loginAdmin(username, password)) {
+        //    Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
             val intent = Intent(this@AdminLogin, AdminHomePage::class.java)
             startActivity(intent)
+        //} else {
+        //    Toast.makeText(
+        //        this, "Login has failed",
+        //        Toast.LENGTH_SHORT
+        //    ).show()
+//
+        //}
+
         }
 
     fun btnRegisterAdd(view: View){
