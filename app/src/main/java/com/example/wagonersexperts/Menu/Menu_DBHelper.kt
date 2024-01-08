@@ -37,9 +37,9 @@ class Menu_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, 
     /**
      * Something along these lines below to get menu items.
      */
-   fun getMenuItems(btnMenuOption: String) : Menu_DataFiles {
+   fun getMenuItem(Id: Int) : Menu_DataFiles {
        val db: SQLiteDatabase = this.writableDatabase
-       val sqlStatement = "SELECT * FROM $TableMenu WHERE $columnType = $btnMenuOption AND $columnAvailable = 1"
+       val sqlStatement = "SELECT * FROM $TableMenu WHERE $columnID = $Id AND $columnAvailable = 1"
 
        val cursor: Cursor = db.rawQuery(sqlStatement, null)
        if(cursor.moveToFirst()){
