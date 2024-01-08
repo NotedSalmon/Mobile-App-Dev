@@ -3158,6 +3158,7 @@ id btnChangePassword
 id btnCustomer
 id btnCustomer_Login
 id btnCustomer_Register
+id btnDelete
 id btnDeleteAccount
 id btnLogOut
 id btnLogin
@@ -3166,6 +3167,7 @@ id btnMenuImage
 id btnMenuOverview
 id btnRegister
 id btnRegisterAdmin
+id btnRemove
 id btnSubmitFeedback
 id btnTestBasket
 id btnTestCustomerSettings
@@ -3322,6 +3324,7 @@ id line1
 id line3
 id linear
 id listMode
+id listView
 id list_item
 id m3_side_sheet
 id marquee
@@ -3460,7 +3463,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -3530,6 +3532,7 @@ id tag_window_insets_animation_callback
 id text
 id text2
 id textEnd
+id textItem
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -3582,6 +3585,7 @@ id txtPassword
 id txtPhoneNumber
 id txtRole
 id txtTitle
+id txtTotal
 id txtUserName
 id txtUsername
 id unchecked
@@ -3728,6 +3732,7 @@ layout activity_admin_menu
 layout activity_admin_register
 layout activity_basket
 layout activity_customer_account_settings
+layout activity_customer_basket
 layout activity_customer_login
 layout activity_customer_register
 layout activity_customer_test
@@ -3750,6 +3755,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout list_view_items
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

@@ -12,6 +12,10 @@
         "source": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-main-34:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.example.wagonersexperts.app-merged_res-32:/layout_activity_basket.xml.flat",
+        "source": "com.example.wagonersexperts.app-main-34:/layout/activity_basket.xml"
+    },
+    {
         "merged": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-merged_res-32:\\layout_activity_admin_home_page.xml.flat",
         "source": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-main-34:\\layout\\activity_admin_home_page.xml"
     },
@@ -46,6 +50,10 @@
     {
         "merged": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-merged_res-32:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-main-34:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-merged_res-32:\\layout_activity_customer_basket.xml.flat",
+        "source": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-main-34:\\layout\\activity_customer_basket.xml"
     },
     {
         "merged": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-merged_res-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -120,16 +128,20 @@
         "source": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-main-34:\\mipmap-hdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.wagonersexperts.app-merged_res-32:/layout_activity_customer_account_settings.xml.flat",
-        "source": "com.example.wagonersexperts.app-main-34:/layout/activity_customer_account_settings.xml"
+        "merged": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-merged_res-32:\\layout_activity_customer_account_settings.xml.flat",
+        "source": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-main-34:\\layout\\activity_customer_account_settings.xml"
     },
     {
-        "merged": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-merged_res-32:\\layout_activity_customer_test.xml.flat",
-        "source": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-main-34:\\layout\\activity_customer_test.xml"
+        "merged": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-merged_res-32:\\layout_list_view_items.xml.flat",
+        "source": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-main-34:\\layout\\list_view_items.xml"
     },
     {
         "merged": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-merged_res-32:\\layout_activity_payment.xml.flat",
         "source": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-main-34:\\layout\\activity_payment.xml"
+    },
+    {
+        "merged": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-merged_res-32:\\layout_activity_customer_test.xml.flat",
+        "source": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-main-34:\\layout\\activity_customer_test.xml"
     },
     {
         "merged": "C:\\Users\\University\\.gradle\\daemon\\8.5\\com.example.wagonersexperts.app-merged_res-32:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
