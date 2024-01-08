@@ -14,7 +14,7 @@ package com.example.wagonersexperts.Menu
     import com.example.wagonersexperts.R
     import kotlinx.coroutines.selects.select
 
-class Admin_add_product: AppCompatActivity() {
+class AdminAddProduct: AppCompatActivity() {
     val dbHelper: Menu_DBHelper = Menu_DBHelper(this)
     private val imageRequest = 1
     var imageToByte: ByteArray? = null
@@ -50,7 +50,7 @@ class Admin_add_product: AppCompatActivity() {
         val type = findViewById<EditText>(R.id.editType).text.toString()
         val menu = Menu_DataFiles(0, productName, price, imageToByte, type, 1)
 
-        if(dbHelper.addMenuItem(menu)){
+        if(dbHelper.addMenuItem(menu) == -1L){
             Toast.makeText(this, "menu added", Toast.LENGTH_SHORT).show()
         }
         else{

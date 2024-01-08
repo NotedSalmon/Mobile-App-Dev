@@ -38,6 +38,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.wagonersexperts.Menu.AdminAddProduct" />
+        <activity android:name="com.example.wagonersexperts.Menu.AdminMenubrowser" />
+        <activity android:name="com.example.wagonersexperts.admin.AdminHomePage" />
+        <activity android:name="com.example.wagonersexperts.admin.AdminLogin" />
+        <activity android:name="com.example.wagonersexperts.admin.AdminRegister" />
         <activity android:name="com.example.wagonersexperts.Customer.CustomerRegister" />
         <activity android:name="com.example.wagonersexperts.Customer.CustomerLogin" />
         <activity android:name="com.example.wagonersexperts.Feedback.Feedback" />
