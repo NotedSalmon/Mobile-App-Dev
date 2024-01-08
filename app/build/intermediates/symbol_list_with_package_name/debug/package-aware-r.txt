@@ -3057,6 +3057,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id FeedbackRating
 id META
 id NO_DEBUG
 id SHIFT
@@ -3066,6 +3067,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id _dynamic
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3150,7 +3152,10 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAddToCart
+id btnAdd_MenuItem
 id btnAdmin
+id btnAdminLogin
 id btnBack
 id btnBasketPay
 id btnBasketRemoveItem
@@ -3161,10 +3166,11 @@ id btnCustomer_Register
 id btnDelete
 id btnDeleteAccount
 id btnLogOut
-id btnLogin
 id btnMenu
 id btnMenuImage
 id btnMenuOverview
+id btnRe
+id btnReg
 id btnRegister
 id btnRegisterAdmin
 id btnRemove
@@ -3189,8 +3195,6 @@ id chain2
 id chains
 id checkbox
 id checked
-id chkAdminActive
-id chkAdminPriveleges
 id chronometer
 id circle_center
 id clear_text
@@ -3303,6 +3307,7 @@ id ignore
 id ignoreRequest
 id image
 id imgLogo
+id imgMenuImage
 id imgMenuPic
 id immediateStop
 id included
@@ -3326,6 +3331,9 @@ id linear
 id listMode
 id listView
 id list_item
+id lstCustomerMenuItems
+id lstFeedback
+id lstMenuAdmin
 id m3_side_sheet
 id marquee
 id masked
@@ -3563,10 +3571,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id txtAdminEmail
-id txtAdminName
-id txtAdminPassword
-id txtAdminPhone
+id txMenuName
 id txtBasketTotal
 id txtChangePassword
 id txtCurrentCustomer
@@ -3579,6 +3584,7 @@ id txtCustomer_Username
 id txtEmail
 id txtFeedback
 id txtFullName
+id txtMenuPrice
 id txtNewPassword
 id txtOldPassword
 id txtPassword
@@ -3586,7 +3592,7 @@ id txtPhoneNumber
 id txtRole
 id txtTitle
 id txtTotal
-id txtUserName
+id txtUserFeedback
 id txtUsername
 id unchecked
 id uniform
@@ -3726,6 +3732,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_admin_add_item
+layout activity_admin_feedback
 layout activity_admin_home_page
 layout activity_admin_login
 layout activity_admin_menu
@@ -3734,6 +3741,7 @@ layout activity_basket
 layout activity_customer_account_settings
 layout activity_customer_basket
 layout activity_customer_login
+layout activity_customer_menu
 layout activity_customer_register
 layout activity_customer_test
 layout activity_feedback
@@ -3755,6 +3763,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout feedback_list
 layout list_view_items
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3775,6 +3784,7 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout menu_list_item
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
