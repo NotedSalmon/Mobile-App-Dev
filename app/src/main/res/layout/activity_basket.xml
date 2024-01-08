@@ -7,39 +7,31 @@
     android:background="@drawable/gradient_background">
 
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="410dp"
-        android:layout_height="482dp"
-        android:layout_marginTop="124dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnBasketRemoveItem"
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="406dp"
+        android:layout_height="531dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+        app:layout_constraintTop_toBottomOf="@+id/txtBasketTotal"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/holo_purple"/>
 
     <TextView
         android:id="@+id/txtBasketTotal"
         android:layout_width="378dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="17dp"
         android:text="Total : £0"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnBasketPay"
@@ -50,6 +42,7 @@
         android:backgroundTint="#8F9779"
         android:fontFamily="@font/allerta_stencil"
         android:text="Pay"
+        android:onClick="btnPay"
         android:textColor="#3E2723"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -64,6 +57,7 @@
         android:backgroundTint="#8F9779"
         android:fontFamily="@font/allerta_stencil"
         android:text="Remove Item"
+        android:onClick="removeSelectedItems"
         android:textColor="#3E2723"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnBasketPay"

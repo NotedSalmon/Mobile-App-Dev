@@ -5,6 +5,7 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import com.example.wagonersexperts.Menu.currentUser
 
 
 /* Database Config*/
@@ -62,10 +63,10 @@ class  Customer_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseN
     This function deletes customers. This will be useful if a user or admin needs to delete an account.
     Again it uses the customer variable which would contain the Customer Username and delete the whole row
      */
-    fun deleteCustomer(customer: CustomerData) : Boolean{
+    fun deleteCustomer(customer: String) : Boolean{
 
         val db: SQLiteDatabase = this.writableDatabase
-        val result = db.delete(Table_Customer_Details, "$column_Username = ${customer.username}", null) == 1
+        val result = db.delete(Table_Customer_Details, "$column_Username = '$customer'", null) == 1
         db.close()
         return result
     }
@@ -74,9 +75,9 @@ class  Customer_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseN
     This function gets a specific user that matches the inputted Username and Full Name, if there is no match
     it return an error message.
      */
-    fun getCustomer(cUsername: String, cFullName: String) : CustomerData {
+    fun getCustomer(cUsername: String) : CustomerData {
         val db: SQLiteDatabase = this.writableDatabase
-        val sqlStatement = "SELECT * FROM $Table_Customer_Details WHERE $column_FullName = $cFullName AND $column_Username = $cUsername"
+        val sqlStatement = "SELECT * FROM $Table_Customer_Details WHERE $column_Username = '$cUsername'"
 
         val cursor: Cursor = db.rawQuery(sqlStatement, null)
         if(cursor.moveToFirst()){
@@ -86,6 +87,20 @@ class  Customer_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseN
         else {
             db.close()
             return CustomerData(0, "Customer does not exist", "", "", "", "", 0 )
+        }
+    }
+
+    fun changePassword(cPassword: String, newPassword: String, currentUser: String) : Boolean {
+        val db: SQLiteDatabase = this.writableDatabase
+        val sqlStatement = "UPDATE $Table_Customer_Details SET $column_Password = '$newPassword' WHERE $column_Username = '$currentUser' AND $column_Password = '$cPassword'"
+        val cursor: Cursor = db.rawQuery(sqlStatement, null)
+        if(cursor.moveToFirst()){
+            db.close()
+            return true
+        }
+        else {
+            db.close()
+            return false
         }
     }
 
