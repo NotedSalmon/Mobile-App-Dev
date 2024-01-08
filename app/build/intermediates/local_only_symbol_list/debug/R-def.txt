@@ -23,6 +23,7 @@ id btnChangePassword
 id btnCustomer
 id btnCustomer_Login
 id btnCustomer_Register
+id btnDelete
 id btnDeleteAccount
 id btnLogOut
 id btnLogin
@@ -31,6 +32,7 @@ id btnMenuImage
 id btnMenuOverview
 id btnRegister
 id btnRegisterAdmin
+id btnRemove
 id btnSubmitFeedback
 id btnTestBasket
 id btnTestCustomerSettings
@@ -47,8 +49,9 @@ id editType
 id editUsername
 id imgLogo
 id imgMenuPic
+id listView
 id ratingBar
-id scrollView2
+id textItem
 id textViewTitle
 id txtAdminEmail
 id txtAdminName
@@ -72,6 +75,7 @@ id txtPassword
 id txtPhoneNumber
 id txtRole
 id txtTitle
+id txtTotal
 id txtUserName
 id txtUsername
 layout activity_admin_add_item
@@ -81,12 +85,14 @@ layout activity_admin_menu
 layout activity_admin_register
 layout activity_basket
 layout activity_customer_account_settings
+layout activity_customer_basket
 layout activity_customer_login
 layout activity_customer_register
 layout activity_customer_test
 layout activity_feedback
 layout activity_main
 layout activity_payment
+layout list_view_items
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
