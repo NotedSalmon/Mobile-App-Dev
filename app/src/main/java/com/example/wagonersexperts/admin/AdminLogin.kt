@@ -23,7 +23,9 @@ class AdminLogin : AppCompatActivity(){
         val password = findViewById<EditText>(R.id.editPassword).toString()
 
         if (dbHelper.loginAdmin(username, password)) {
-            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()val intent = Intent(this@AdminLogin, AdminHomePage::class.javastartActivity(intent)
+            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@AdminLogin, AdminHomePage::class.java)
+            startActivity(intent)
         } else {
             Toast.makeText(
                 this, "Login has failed",
