@@ -14,7 +14,7 @@ package com.example.wagonersexperts.Menu
     import com.example.wagonersexperts.R
     import kotlinx.coroutines.selects.select
 
-class Admin_add_product: AppCompatActivity() {
+class AdminAddProduct: AppCompatActivity() {
     val dbHelper: Menu_DBHelper = Menu_DBHelper(this)
     private val imageRequest = 1
     var imageToByte: ByteArray? = null

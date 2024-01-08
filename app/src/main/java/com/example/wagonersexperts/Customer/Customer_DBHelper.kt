@@ -27,7 +27,7 @@ class  Customer_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseN
     //This is called the first time a database is accessed
     override fun onCreate(db: SQLiteDatabase?) {
         val sqlCreateStatement: String = "CREATE TABLE " + Table_Customer_Details + " ( " + column_ID +
-                " INTEGER PRIMARY KEY AUTOINCREMENT, " + column_FullName + " TEXT, " + column_Email + " TEXT, " +
+                " INTEGER PRIMARY KEY AUTOINCREMENT," + column_FullName + " TEXT, " + column_Email + " TEXT, " +
                 column_PhoneNumber + " TEXT, " + column_Username + " TEXT, " + column_Password + " TEXT, " + column_isActive + " INTEGER DEFAULT 1 )"
         db?.execSQL(sqlCreateStatement)
     }

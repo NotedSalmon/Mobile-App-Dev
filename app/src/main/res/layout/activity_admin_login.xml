@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background">
 
+    <Button
+        android:id="@+id/btnAdminLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="btnAdminLogin"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
     <EditText
         android:id="@+id/editUsername"
         android:layout_width="wrap_content"
@@ -29,27 +40,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="101dp"
-        android:layout_marginBottom="52dp"
         android:ems="10"
         android:inputType="text"
         android:text="Password"
-        app:layout_constraintBottom_toTopOf="@+id/btnAdmin_Login"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editUsername" />
-
-    <Button
-        android:id="@+id/btnAdmin_Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="52dp"
-        android:onClick="btnAdminLogin"
-        android:text="Login"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
 
     <Button
         android:id="@+id/btnReg"

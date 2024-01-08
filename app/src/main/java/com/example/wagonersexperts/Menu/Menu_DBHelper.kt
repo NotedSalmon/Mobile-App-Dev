@@ -20,14 +20,16 @@ class Menu_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, 
     public val column_Type = "Type"
     public val column_Available = "Available"
     override fun onCreate(db: SQLiteDatabase?) {
-        val sqlCreateStatement: String = "CREATE TABLE " + Table_Menu + " ( " + column_ID +
+        db?.execSQL( "CREATE TABLE " + Table_Menu + " ( " + column_ID +
                 " INTEGER PRIMARY KEY AUTOINCREMENT, " + column_Name + " TEXT, " +
-                column_Price + " INTEGER " + column_Image + " BLOB " + column_Type + " TEXT " + column_Available + " INTEGER )"
-        db?.execSQL(sqlCreateStatement)
+                column_Price + " INTEGER, " + column_Image + " BLOB, " + column_Type + " TEXT, " + column_Available + " INTEGER DEFAULT 1 )"
+        )
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        TODO("Not yet implemented")
+        if (oldVersion < newVersion)
+            db!!.execSQL("ALTER TABLE $Table_Menu ADD COLUMN $column_Type TEXT")
     }
 
 
@@ -57,7 +59,7 @@ class Menu_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, 
         cv.put(column_Price, menu.product_Price)
         cv.put(column_Image, menu.product_image)
         cv.put(column_Type, menu.product_type)
-        cv.put(column_Available, menu.available)
+        cv.put(column_Available, 1)
 
         val success = db.insert(Table_Menu, null, cv)
         db.close()
@@ -67,7 +69,7 @@ class Menu_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseName, 
     fun getAllMenuItems(): List<Menu_DataFiles>{
         val menuList = mutableListOf<Menu_DataFiles>()
         val db: SQLiteDatabase = this.writableDatabase
-        val cursor: Cursor = db.rawQuery("SELECT * FROM $Table_Menu WHERE $column_Available = 1", null)
+        val cursor: Cursor = db.rawQuery("SELECT * FROM $Table_Menu", null)
 
         cursor.use{
             while (it.moveToNext()){

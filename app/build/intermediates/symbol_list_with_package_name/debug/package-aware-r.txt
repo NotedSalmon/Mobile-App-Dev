@@ -3150,7 +3150,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAdd_MenuItem
 id btnAdmin
+id btnAdminLogin
 id btnBack
 id btnBasketPay
 id btnBasketRemoveItem
@@ -3160,10 +3162,11 @@ id btnCustomer_Login
 id btnCustomer_Register
 id btnDeleteAccount
 id btnLogOut
-id btnLogin
 id btnMenu
 id btnMenuImage
 id btnMenuOverview
+id btnRe
+id btnReg
 id btnRegister
 id btnRegisterAdmin
 id btnSubmitFeedback
@@ -3187,8 +3190,6 @@ id chain2
 id chains
 id checkbox
 id checked
-id chkAdminActive
-id chkAdminPriveleges
 id chronometer
 id circle_center
 id clear_text
@@ -3301,6 +3302,7 @@ id ignore
 id ignoreRequest
 id image
 id imgLogo
+id imgMenuImage
 id imgMenuPic
 id immediateStop
 id included
@@ -3323,6 +3325,7 @@ id line3
 id linear
 id listMode
 id list_item
+id lstMenuAdmin
 id m3_side_sheet
 id marquee
 id masked
@@ -3560,10 +3563,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id txtAdminEmail
-id txtAdminName
-id txtAdminPassword
-id txtAdminPhone
+id txMenuName
 id txtBasketTotal
 id txtChangePassword
 id txtCurrentCustomer
@@ -3576,13 +3576,13 @@ id txtCustomer_Username
 id txtEmail
 id txtFeedback
 id txtFullName
+id txtMenuPrice
 id txtNewPassword
 id txtOldPassword
 id txtPassword
 id txtPhoneNumber
 id txtRole
 id txtTitle
-id txtUserName
 id txtUsername
 id unchecked
 id uniform
@@ -3769,6 +3769,7 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout menu_list_item
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
