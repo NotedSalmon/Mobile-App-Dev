@@ -17,11 +17,12 @@ class AdminLogin : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_login)
     }
-
+//login button
     fun btnAdminLogin(view: View){
         val username = findViewById<EditText>(R.id.editUsername).toString()
         val password = findViewById<EditText>(R.id.editPassword).toString()
 
+    //sends login authentication query to database. If the query fails the else statement is able to catch the error
         if (dbHelper.loginAdmin(username, password)) {
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
             val intent = Intent(this@AdminLogin, AdminHomePage::class.java)
@@ -36,8 +37,4 @@ class AdminLogin : AppCompatActivity(){
 
         }
 
-    fun btnRegisterAdd(view: View){
-        val intent = Intent(this@AdminLogin, AdminRegister::class.java)
-        startActivity(intent)
-    }
 }

@@ -11,8 +11,12 @@
         android:layout_width="139dp"
         android:layout_height="82dp"
         android:layout_marginTop="100dp"
+        android:backgroundTint="#8F9779"
+        android:fontFamily="@font/allerta_stencil"
         android:onClick="btnRegisterAdmin"
         android:text="Register a new account"
+        android:textColor="#3E2723"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,7 +29,11 @@
         android:layout_marginTop="60dp"
         android:onClick="btnMenuOverview"
         android:text="Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegisterAdmin"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="138dp" />
+        app:layout_constraintVertical_bias="0.031"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
