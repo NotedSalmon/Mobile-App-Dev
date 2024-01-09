@@ -89,7 +89,11 @@ class  Customer_DBHelper(context: Context) : SQLiteOpenHelper(context, DataBaseN
             return CustomerData(0, "Customer does not exist", "", "", "", "", 0 )
         }
     }
-
+    /*
+        This function allows the user to change password. It takes in the current password, new password and the current user.
+        It then updates the password in the database if the password matches the current password.
+        There is also a try catch statement to catch any errors that may occur.
+         */
     fun changePassword(cPassword: String, newPassword: String, currentUser: String) : Boolean {
         val db: SQLiteDatabase = this.writableDatabase
         val sqlStatement = "UPDATE $Table_Customer_Details SET $column_Password = '$newPassword' WHERE $column_Username = '$currentUser' AND $column_Password = '$cPassword'"
