@@ -22,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Feedback.AdminFeedback"/>
         <activity android:name=".Menu.AdminAddProduct"/>
         <activity android:name=".Menu.AdminMenubrowser"/>
         <activity android:name=".admin.AdminHomePage"/>

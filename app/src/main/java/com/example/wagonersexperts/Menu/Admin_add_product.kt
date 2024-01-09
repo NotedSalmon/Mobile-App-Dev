@@ -23,6 +23,7 @@ class AdminAddProduct: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_add_item)
 
+        //when upload image button is clicked the user is able to search through their personal files for photos
         val uploadImage: Button = findViewById(R.id.btnMenuImage)
         uploadImage.setOnClickListener(){
             val intent = Intent()
@@ -32,6 +33,7 @@ class AdminAddProduct: AppCompatActivity() {
         }
     }
 
+    //Once an image has been requested by the user, the image data is converted and sored as a byteArray
      override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
          super.onActivityResult(requestCode, resultCode, data)
          if(requestCode == imageRequest && resultCode == Activity.RESULT_OK && data != null && data.data != null){
@@ -43,7 +45,7 @@ class AdminAddProduct: AppCompatActivity() {
         }
     }
 
-
+    //sends upload query to the database
     fun btnUpload(view: View) {
         val productName = findViewById<EditText>(R.id.editProductName).text.toString()
         val price = findViewById<EditText>(R.id.editPrice).text.toString().toInt()
