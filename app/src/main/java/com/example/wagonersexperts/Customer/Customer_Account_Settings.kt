@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.wagonersexperts.MainActivity
 import com.example.wagonersexperts.Menu.CustomerTest
 import com.example.wagonersexperts.R
+import com.example.wagonersexperts.extra.SHAEncryption.shaEncrypt
 
 class Customer_Account_Settings : AppCompatActivity() {
     val dbHelper: Customer_DBHelper = Customer_DBHelper(this)
@@ -45,8 +46,8 @@ class Customer_Account_Settings : AppCompatActivity() {
     }
 
     fun btnChangePassword(view: View){
-        val txtCurrentPassword = findViewById<EditText>(R.id.txtOldPassword).text.toString()
-        val txtNewPassword = findViewById<EditText>(R.id.txtNewPassword).text.toString()
+        val txtCurrentPassword = shaEncrypt(findViewById<EditText>(R.id.txtOldPassword).text.toString())
+        val txtNewPassword = shaEncrypt(findViewById<EditText>(R.id.txtNewPassword).text.toString())
 
         if (txtCurrentPassword.isEmpty() || txtNewPassword.isEmpty()){
             Toast.makeText(this, "Please enter a password", Toast.LENGTH_SHORT).show()
