@@ -37,4 +37,9 @@ class AdminLogin : AppCompatActivity(){
 
         }
 
+    fun btnRegisterAdd(view: View){
+        val intent = Intent(this@AdminLogin, AdminRegister::class.java)
+        startActivity(intent)
+    }
+
 }
