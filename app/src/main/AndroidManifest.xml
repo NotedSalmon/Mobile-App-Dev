@@ -35,6 +35,7 @@
         <activity android:name=".Payment.Payment_Pay"/>
         <activity android:name=".Orders.Basket"/>
         <activity android:name=".Customer.Customer_Account_Settings"/>
+        <activity android:name=".Orders.TestOrder"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

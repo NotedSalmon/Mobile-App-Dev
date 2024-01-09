@@ -3156,7 +3156,9 @@ id btnAddToCart
 id btnAdd_MenuItem
 id btnAdmin
 id btnAdminLogin
+id btnAdminRegister
 id btnBack
+id btnBackToTests
 id btnBasketPay
 id btnBasketRemoveItem
 id btnChangePassword
@@ -3170,7 +3172,6 @@ id btnMenu
 id btnMenuImage
 id btnMenuOverview
 id btnRe
-id btnReg
 id btnRegister
 id btnRegisterAdmin
 id btnRemove
@@ -3180,6 +3181,7 @@ id btnTestCustomerSettings
 id btnTestFeedback
 id btnTestPayment
 id btnUpload
+id buttonMakePayment
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3195,6 +3197,7 @@ id chain2
 id chains
 id checkbox
 id checked
+id chkAdminPriveleges
 id chronometer
 id circle_center
 id clear_text
@@ -3257,6 +3260,9 @@ id edit
 id editPassword
 id editPrice
 id editProductName
+id editTextCVV
+id editTextCardNumber
+id editTextExpiryDate
 id editType
 id editUsername
 id edit_query
@@ -3545,6 +3551,14 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
+id textView4
+id textView5
+id textView6
+id textView7
+id textView8
 id textViewTitle
 id text_input_end_icon
 id text_input_error_icon
@@ -3572,6 +3586,10 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id txMenuName
+id txtAdminEmail
+id txtAdminName
+id txtAdminPassword
+id txtAdminPhone
 id txtBasketTotal
 id txtChangePassword
 id txtCurrentCustomer
@@ -3583,6 +3601,7 @@ id txtCustomer_Password
 id txtCustomer_Username
 id txtEmail
 id txtFeedback
+id txtFinalTotal
 id txtFullName
 id txtMenuPrice
 id txtNewPassword
@@ -3593,6 +3612,7 @@ id txtRole
 id txtTitle
 id txtTotal
 id txtUserFeedback
+id txtUserName
 id txtUsername
 id unchecked
 id uniform
@@ -3747,6 +3767,7 @@ layout activity_customer_test
 layout activity_feedback
 layout activity_main
 layout activity_payment
+layout activity_test_customer_order_page
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

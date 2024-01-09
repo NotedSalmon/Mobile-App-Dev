@@ -38,6 +38,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.wagonersexperts.Feedback.AdminFeedback" />
         <activity android:name="com.example.wagonersexperts.Menu.AdminAddProduct" />
         <activity android:name="com.example.wagonersexperts.Menu.AdminMenubrowser" />
         <activity android:name="com.example.wagonersexperts.admin.AdminHomePage" />
@@ -50,6 +51,7 @@
         <activity android:name="com.example.wagonersexperts.Payment.Payment_Pay" />
         <activity android:name="com.example.wagonersexperts.Orders.Basket" />
         <activity android:name="com.example.wagonersexperts.Customer.Customer_Account_Settings" />
+        <activity android:name="com.example.wagonersexperts.Orders.TestOrder" />
 
         <meta-data
             android:name="preloaded_fonts"
